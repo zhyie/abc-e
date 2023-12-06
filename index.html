@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC-E</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- CONTROL PANEL -->
+    <div id="control-panel">
+        <button onclick="runCode()">RUN</button>
+        <div id="menu-dot"></div>
+    </div>
+
+<!-- CODE EDITOR START-->
+<div id="editor">// A functional code editor built using Ace library (https://ace.c9.io/).
+
+public class Main {
+    public static void main(String[] args) {
+        // start coding here...
+        System.out.println("Hello World!");
+    }
+}
+</div>
+<!-- CODE EDITOR END -->
+
+    <div id="output">
+        <div id="text">OUTPUT</div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.0/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.0/ext-language_tools.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
